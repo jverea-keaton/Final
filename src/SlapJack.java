@@ -7,9 +7,6 @@ public class SlapJack {
         int deal;
         int slap;
     }
-
-    public static void displayfourloop;
-
-
+    
 }
 
