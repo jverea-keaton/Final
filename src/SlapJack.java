@@ -5,7 +5,6 @@ public class SlapJack {
         int jack;
         int deal;
         int slap;
-        displayfourloop();
 
         System.out.println("This is a game called slap jack. ");
     }
