@@ -1,8 +1,10 @@
+
 import java.util.Scanner;
+
 
 public class SlapJack {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int cards;
         int jack;
         int deal;
@@ -21,6 +23,6 @@ public class SlapJack {
 
 
     }
-
-
+    
 }
+
