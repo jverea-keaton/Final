@@ -7,7 +7,7 @@ public class SlapJack {
         int jack;
         int deal;
         int slap;
-        int user; 
+        int user;
         displayfourloop();
         Scanner input = new Scanner(System.in);
 
