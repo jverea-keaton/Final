@@ -10,6 +10,10 @@ public class SlapJack {
 
         System.out.println("This is a game called slap jack. ");
     }
-    
+    public static void displayfourloop(){
+        for (int i = 0; i <= 10; i++){
+            System.out.println(i);
+        }
+    }
 }
 
