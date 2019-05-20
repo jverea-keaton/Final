@@ -10,10 +10,22 @@ public class SlapJack {
 
         System.out.println("This is a game called slap jack. ");
     }
-    public static void displayfourloop(){
-        for (int i = 0; i <= 10; i++){
-            System.out.println(i);
+
+    public static void displayfourloop() {
+        while (user != 999)
+        {
+            if (user == 1) {
+                if (random == 1)
+                    result = "tie";
+                else if (random == 2)
+                    result = "Lose";
+                else
+                    result = "Win";
+            } else if (user == 2) {
+                if (random == 1) {
+                    result = "Win";
+                }
+            }
         }
     }
 }
-
