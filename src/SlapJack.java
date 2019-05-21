@@ -10,11 +10,12 @@ public class SlapJack {
         int deal;
         int slap;
         int user;
+        int count;
         displayfourloop();
         Scanner input = new Scanner(System.in);
 
         Rules.displayRulesFirstPart();
-        int random = (int) (Math.random() * 3 + 1);
+
 
 
 
