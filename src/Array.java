@@ -1,11 +1,10 @@
 public class Array {
+
     public static void displayArray(){
         double[] cards = {52};
         int total = 0;
 
         displayFor(cards);
-
-
 
     }
     public static void displayFor(double[] cards){
