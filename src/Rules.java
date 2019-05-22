@@ -7,5 +7,6 @@ public class Rules {
         System.out.println("The objective of the game is to get the most jacks out of the all the players.");
         System.out.println("Hope you have fun and enjoy the game");
         System.out.println(" Jack = 1 To slap press 2");
+        System.out.println("You HAVE to be over 4 years old!");
     }
 }
