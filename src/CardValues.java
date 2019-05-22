@@ -30,6 +30,11 @@ public class CardValues {
             System.out.println("Red Heart " + r );}
         if(flipCoin == 4){
             System.out.println("Black Club " + b );}
+        if(flipCoin == 5){
+            System.out.println("Red Spade " + r );}
+        if(flipCoin == 6){
+            System.out.println("Black Diamond " + b );}
+
 
 
 
