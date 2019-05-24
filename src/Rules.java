@@ -3,7 +3,9 @@ public class Rules {
     //write the rules in here.
 
     public static void displayRulesFirstPart(){
-        System.out.println("This game is called 21 sticks. You start with 21 sticks and you and another person choose to take 1 or 2 and the last person to draw a stick loses.");
+        System.out.println("This game is called 21 sticks. There is 21 sticks in the middle and you another player" +
+                "take turns choosing to grab 1 stick or to grab 2 stick and the player that grabs the last" +
+                " stick loses.");
 
     }
 }
