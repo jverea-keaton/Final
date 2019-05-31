@@ -4,11 +4,16 @@ public class Sticks {
     public static void displaysticks(){
         int quit = 0;
         int grabSticks = 0;
+        int count = 0;
+        int gamesPlayed = 0;
+        int playagain;
 
         int sticks = 21;
         Scanner input = new Scanner(System.in);
 
         while(quit != 999) {
+            while(sticks !=0){
+                count = count+1;
 
             System.out.println("There are " + sticks + " sticks");
             System.out.println("Choose to take 1 or 2 sticks out of the pile or 999 to quit");
@@ -23,7 +28,14 @@ public class Sticks {
             if(sticks < 1){
                 quit = 999;
                 System.out.println("You Suck!!!!!");
+
             }
+
+        }
+        System.out.println(count);
+
+
+
         }
 
 
