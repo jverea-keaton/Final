@@ -33,12 +33,11 @@ public class Sticks {
                     System.out.println(count);
                 }
 
-
-
             }
         System.out.println("Would you like to play again? Enter Y to play or any other key to quit: ");
             playAgain = input.next();
             quit = 0;
+            count = 0;
         }
     }
 }
