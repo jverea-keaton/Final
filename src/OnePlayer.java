@@ -11,13 +11,9 @@ public class OnePlayer {
         int turns = 0;
         String playAgain = "Y";
         Scanner input = new Scanner(System.in);
-        int random = (int) (Math.random() *2 + 1);
+        int random = (int) (Math.random() * 2 + 1);
         System.out.println("One Player Game");
 
-        if(random == 1){
-            sticks = sticks - 1;
-            System.out.println(sticks + " Left over");
-        }
 
 
         while (playAgain.equals("Y")) {
@@ -27,18 +23,20 @@ public class OnePlayer {
 
                 System.out.println("There are " + sticks + " sticks");
                 System.out.println("Choose to take 1 or 2 sticks out of the pile or 999 to quit");
+
                 grabSticks = input.nextInt();
-                if(turns % 2 == 0){//users turn
+                if (turns % 2 == 0) {//users turn
                     if (grabSticks >= 2) {
                         sticks = sticks - 2;
                         System.out.println(sticks + " Left over");
                     } else if (grabSticks <= 1) {
                         sticks = sticks - 1;
                         System.out.println(sticks + " Left over");
+                    } else if (sticks <= 1) {
+                        System.out.println("You lose");
                     }
 
-                }
-                else//computers turn
+                } else//computers turn
                     if (random >= 2) {
                         sticks = sticks - 2;
                         System.out.println(sticks + " Left over");
@@ -46,23 +44,20 @@ public class OnePlayer {
                         sticks = sticks - 1;
                         System.out.println(sticks + " Left over");
                     }
+                    turns++;
                 if (sticks < 1) {
                     quit = 999;
-                    System.out.println("You Suck!!!!!");
+                    System.out.println("You lose");
                     sticks = 21;
                 }
-
-                }
-
-
-
             }
-            System.out.println(count);
-            System.out.println("Would you like to play again? You have played " + gamesPlayed +" games.\n Enter Y to play or any other key to quit: ");
+            System.out.println(turns);
+            System.out.println("Would you like to play again? You have played " + gamesPlayed + " games.\n Enter Y to play or any other key to quit: ");
             playAgain = input.next();
-            quit = 0;
         }
     }
 }
+
+
 
 
